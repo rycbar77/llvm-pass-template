@@ -15,5 +15,5 @@ Run:
     $ clang++ -fno-discard-value-names -Xclang -disable-O0-optnone -fpass-plugin=build/mypass/libMyPass.so main.cpp -o main 
     $ opt -disable-output \
     -load-pass-plugin=build/mypass/libMyPass.so \
-    -passes="my-pass" -S main.ll
+    -passes="mypass" -S main.ll
     $ make && make test
